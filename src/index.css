@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Ubuntu", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Ubuntu Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Canonical / Yaru palette */
+  --color-ubuntu-orange: #e95420;
+  --color-ubuntu-orange-light: #ff8352;
+  --color-ubuntu-orange-dark: #c7401d;
+
+  --color-aubergine-950: #1a0012;
+  --color-aubergine-900: #2c001e;
+  --color-aubergine-800: #3b0929;
+  --color-aubergine-700: #5e2750;
+  --color-aubergine-600: #77216f;
+  --color-aubergine-500: #92388a;
+
+  --color-shell-950: #0e0d10;
+  --color-shell-900: #18171b;
+  --color-shell-800: #232226;
+  --color-shell-700: #2f2d32;
+  --color-shell-600: #403d42;
+  --color-shell-500: #58545a;
+  --color-shell-400: #aea79f;
+
+  --color-porcelain-50: #fbfaf9;
+  --color-porcelain-100: #f4f3f1;
+  --color-porcelain-200: #e9e7e3;
+
+  --animate-blink: blink 1.1s step-end infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-shell-950);
+    color: var(--color-porcelain-100);
+    font-family: var(--font-sans);
+    overscroll-behavior-y: none;
+  }
+
+  ::selection {
+    background: var(--color-ubuntu-orange);
+    color: white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-shell-950);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-shell-600);
+    border-radius: 999px;
+    border: 2px solid var(--color-shell-950);
+  }
+}
