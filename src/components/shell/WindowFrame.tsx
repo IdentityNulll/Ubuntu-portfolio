@@ -1,21 +1,33 @@
 import { motion } from 'framer-motion'
 import type { ReactNode } from 'react'
 
-function WindowControls() {
+export function WindowControls({ onClose }: { onClose?: () => void }) {
+  const CloseTag = onClose ? 'button' : 'span'
   return (
-    <div className="flex items-center gap-1.5" aria-hidden="true">
-      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-shell-600/70 transition-colors hover:bg-shell-500">
+    <div className="flex items-center gap-1.5">
+      <span
+        className="flex h-5 w-5 items-center justify-center rounded-full bg-shell-600/70 transition-colors hover:bg-shell-500"
+        aria-hidden="true"
+      >
         <span className="h-[2px] w-2.5 rounded-full bg-shell-950/70" />
       </span>
-      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-shell-600/70 transition-colors hover:bg-shell-500">
+      <span
+        className="flex h-5 w-5 items-center justify-center rounded-full bg-shell-600/70 transition-colors hover:bg-shell-500"
+        aria-hidden="true"
+      >
         <span className="h-2 w-2 rounded-[2px] border-[1.5px] border-shell-950/70" />
       </span>
-      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-shell-600/70 transition-colors hover:bg-red-500/80">
+      <CloseTag
+        onClick={onClose}
+        aria-label={onClose ? 'Close' : undefined}
+        aria-hidden={onClose ? undefined : true}
+        className="flex h-5 w-5 items-center justify-center rounded-full bg-shell-600/70 transition-colors hover:bg-red-500/80"
+      >
         <span className="relative block h-2 w-2">
           <span className="absolute inset-0 rotate-45 rounded-full bg-shell-950/70" style={{ width: 2, left: '50%', marginLeft: -1 }} />
           <span className="absolute inset-0 -rotate-45 rounded-full bg-shell-950/70" style={{ width: 2, left: '50%', marginLeft: -1 }} />
         </span>
-      </span>
+      </CloseTag>
     </div>
   )
 }

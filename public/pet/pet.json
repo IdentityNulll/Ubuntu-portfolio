@@ -1,0 +1,17 @@
+{
+  "fps": {
+    "idle": 1,
+    "walk": 6,
+    "dance": 4,
+    "click": 1,
+    "sleep": 1,
+    "drag": 1
+  },
+  "blink": {
+    "every": [
+      2200,
+      6500
+    ],
+    "duration": 140
+  }
+}
