@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="flex min-h-[100svh] scroll-mt-9 flex-col justify-center px-4 pb-28 pt-16 sm:px-6 md:pb-16 md:pl-24"
+      className="flex min-h-[100svh] scroll-mt-9 flex-col justify-center px-4 pb-28 pt-16 sm:px-6"
     >
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
         <motion.div

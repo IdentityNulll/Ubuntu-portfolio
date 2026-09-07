@@ -7,7 +7,6 @@ const CAT_SIZE = 96
 const WALK_SPEED = 55 // px/sec
 const GRAVITY = 1400 // px/sec^2
 const SLEEP_AFTER_MS = 90_000
-const DESKTOP_BREAKPOINT = 768
 
 const SPRITES: Record<Exclude<CatState, 'fall'> | 'fall', string[]> = {
   idle: ['/pet/idle/01.svg'],
@@ -53,10 +52,9 @@ function clamp(v: number, min: number, max: number) {
 }
 
 function bounds() {
-  const isDesktop = window.innerWidth >= DESKTOP_BREAKPOINT
-  const minX = isDesktop ? 100 : 8
+  const minX = 8
   const maxX = Math.max(window.innerWidth - CAT_SIZE - 8, minX)
-  const bottomSafe = isDesktop ? 24 : 84
+  const bottomSafe = 84 // clears the bottom dock at every breakpoint
   const topSafe = 48
   const floorY = Math.max(window.innerHeight - CAT_SIZE - bottomSafe, topSafe)
   return { minX, maxX, topSafe, floorY }

@@ -17,7 +17,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="scroll-mt-14 px-4 py-16 sm:px-6 md:py-24 md:pl-24">
+    <section id="contact" className="scroll-mt-14 px-4 py-16 sm:px-6 md:py-24">
       <div className="mx-auto max-w-3xl">
         <WindowFrame
           id="contact-window"

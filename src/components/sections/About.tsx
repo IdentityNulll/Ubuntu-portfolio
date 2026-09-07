@@ -9,7 +9,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="scroll-mt-14 px-4 py-16 sm:px-6 md:py-24 md:pl-24"
+      className="scroll-mt-14 px-4 py-16 sm:px-6 md:py-24"
     >
       <div className="mx-auto max-w-6xl">
         <WindowFrame
