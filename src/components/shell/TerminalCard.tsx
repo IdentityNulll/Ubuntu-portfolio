@@ -15,7 +15,7 @@ const script: ScriptLine[] = [
   { text: 'Applying to United World Colleges (UWC)', className: 'text-porcelain-200/80' },
   { prompt: '~$', text: 'ls ./projects' },
   {
-    text: 'ielts-grader/  ascension/  credit-tracker/  milliy-sertifikat/',
+    text: 'ielts-grader/  ascension/  credit-tracker/  tilup/  85maktab/',
     className: 'text-aubergine-500',
   },
   { prompt: '~$', text: '' },

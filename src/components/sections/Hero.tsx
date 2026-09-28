@@ -31,8 +31,7 @@ export function Hero() {
           <p className="mt-5 max-w-xl text-base leading-relaxed text-porcelain-200/80 sm:text-lg">
             I teach at an IT education center by day, and spend my evenings building small,
             useful software — an AI essay grader, a life-tracking app I use daily, tools for
-            local shopkeepers. I'm applying to UWC to keep learning how to build things, and
-            communities, that matter.
+            local shopkeepers.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">

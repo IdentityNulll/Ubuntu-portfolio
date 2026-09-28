@@ -1,4 +1,4 @@
-import { FileText, GraduationCap, School, MapPin } from "lucide-react";
+import { FileText, School, MapPin } from "lucide-react";
 import { WindowFrame } from "../shell/WindowFrame";
 import { site } from "../../data/site";
 import me from "../../../public/screenshots/me-photo.png";
@@ -59,24 +59,6 @@ export function About() {
                   also where I first noticed how much of teaching is just
                   building the right small tool at the right moment — which is a
                   lot of why I started building software of my own.
-                </p>
-              </div>
-
-              <div>
-                <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-shell-900">
-                  <GraduationCap
-                    className="h-4 w-4 text-ubuntu-orange"
-                    strokeWidth={2}
-                  />
-                  Why UWC
-                </div>
-                <p className="text-[15px] leading-relaxed text-shell-600">
-                  I'm applying to United World Colleges because I want to be in
-                  a classroom that looks like the world I'm actually trying to
-                  build software for — and because the projects below are, so
-                  far, self-taught and self-directed. I want the kind of
-                  environment, and the kind of peers, that push that further
-                  than I can on my own.
                 </p>
               </div>
 

@@ -8,5 +8,4 @@ export const site = {
   city: 'Namangan, Uzbekistan',
   email: 'identitynulll@gmail.com',
   github: 'https://github.com/identitynulll',
-  linkedin: 'https://linkedin.com/in/yourusername',
 }

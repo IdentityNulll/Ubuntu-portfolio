@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Briefcase, Check, Copy, Link2, Mail, Send } from 'lucide-react'
+import { Check, Copy, Link2, Mail, Send } from 'lucide-react'
 import { WindowFrame } from '../shell/WindowFrame'
 import { site } from '../../data/site'
 
@@ -65,11 +65,7 @@ export function Contact() {
 
             <div className="mt-8 flex flex-wrap items-center gap-3 border-t border-porcelain-200 pt-6">
               <SocialLink href={site.github} label="GitHub" icon={Link2} />
-              <SocialLink href={site.linkedin} label="LinkedIn" icon={Briefcase} />
             </div>
-            <p className="mt-2 text-xs text-shell-400">
-              Social links are placeholders — update them in src/data/site.ts.
-            </p>
           </div>
         </WindowFrame>
       </div>

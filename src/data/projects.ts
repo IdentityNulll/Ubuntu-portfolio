@@ -1,4 +1,4 @@
-import { BookOpen, Flame, PenLine, Store } from 'lucide-react'
+import { BookOpen, Flame, PenLine, School, Store } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
 export interface Project {
@@ -76,5 +76,20 @@ export const projects: Project[] = [
     repoUrl: null,
     screenshot: '/screenshots/tilup-screenshot.png',
     badge: 'Client work',
+  },
+  {
+    id: '85maktab',
+    folder: '85maktab/',
+    name: '85-Maktab Namangan',
+    tagline: "Official website for my own school",
+    description:
+      "The official website for School №85 in Namangan — my own school. I volunteered to design and build it: school info, news, admissions, and life-at-school pages, all in Uzbek.",
+    tags: ['Volunteer', 'Full-stack', 'Education'],
+    icon: School,
+    iconBg: 'from-aubergine-500 to-ubuntu-orange-dark',
+    demoUrl: 'https://85maktab.uz',
+    repoUrl: null,
+    screenshot: '/screenshots/85maktab-screenshot.png',
+    badge: 'Volunteer work',
   },
 ]
